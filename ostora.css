@@ -1,0 +1,425 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: black;
+    color: white;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1) 40%, rgb(138, 155, 10)) fixed;
+}
+/* tablet-sized screens */
+
+@media screen and ( max-width:1024px)  {
+    .img-right,
+    .img-left,
+    .broom1,
+    .carousel-2,
+    .carousel-3,
+    .carousel-4,
+    .carousel-5,
+    .carousel-6,
+    .carousel-7,
+    .img-circle,
+    .clients,
+    .img12,
+    .Send,
+    .Name,
+    .Phone,
+    .E-mail,
+    .Message,
+    .Message2,
+    .Send2,
+    .move {
+        margin: 10px; 
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        transition: background-color 3s ease-in-out;
+        display: flex;
+    }
+
+    .navbar-brand img {
+        height: 60px; 
+        margin-top: -15px;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        margin-top: -55px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: flex-end;
+    }
+    .nav-item{
+        margin-left: 10px;
+        display: flex;
+    }
+
+    .navbar-collapse {
+        display: none; /* Hide the menu initially */
+    }
+
+    .navbar-toggler-icon {
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    .navbar-toggler.collapsed + .navbar-collapse {
+        display: block; 
+    } 
+    .navbar-toggler:not(.collapsed) + .navbar-collapse {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end; 
+        position: absolute; 
+        top: 60px; 
+        right: 0; 
+        width: 100%; 
+    }
+    .inner1{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px; 
+        width: 800px;
+        height: 300px;
+        margin-left: -10px;
+    }
+    .inner2{
+        display: flex;
+        flex-direction: row;
+        margin-right: -800px;
+    }
+    .inner3{
+        display: flex;
+        flex-direction: row;
+        margin-right: -800px;
+    }
+    .img-12-idit{
+        display: flex;
+    }
+}
+/*  mobile-sized screens */
+
+@media screen and (max-width: 600px)  {
+    body{
+        overflow-x: hidden;
+    }
+    .navbar {
+        transition: background-color 3s ease-in-out;
+        display: flex;
+    }
+    .navbar-brand img {
+        height: 60px;
+        margin-top: -18px;
+        
+    }
+    .navbar-nav {
+        flex-direction: row;
+        margin-top: -68px;
+        margin-right: -20px;
+        justify-content: flex-end;
+        width: 400px;
+    }
+    .nav-item{
+        margin-left: 10px;
+        margin-right: 22px;
+    }
+    .navbar-collapse {
+        display: none; /* Hide the menu initially */
+    }
+    .navbar-toggler-icon {
+        background-color: white; /* Adjust color */
+    }
+    .navbar-toggler.collapsed + .navbar-collapse {
+        display: block; 
+    }
+    .navbar-toggler:not(.collapsed) + .navbar-collapse {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end; 
+        position: absolute; 
+        top: 60px; 
+        right: 0; 
+        width: 100%; 
+    } 
+    .first-img{
+        width: 400px;
+        height: 400px;
+    }
+    .inner1{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        margin-bottom: 10px; 
+        width: 400px;
+        height: 300px;
+        margin-left: -40px;
+    }
+    .inner2{
+        display: flex;
+        flex-direction: row;
+        margin-right: -800px;
+    }
+    .inner3{
+        flex-direction: row;
+        margin-right: -1000px;
+        margin-left: 10px;
+        
+    }
+    .img-clean{
+        margin-left: 80px;
+        flex-direction: row;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .img-clean2{
+    display: none;
+    }
+    .imag-22{
+        display: none;
+    }
+    .youtube-img{
+        display: none;
+    }
+    .img-12-idit{
+        margin-right: -1000px;
+        margin-left: 10px;
+    }
+    .img12{
+        margin-right: -1000px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .img-right,
+    .img-left,
+    .broom1,
+    .carousel-2,
+    .carousel-3,
+    .carousel-4,
+    .carousel-5,
+    .carousel-6,
+    .carousel-7,
+    .img-circle,
+    .clients,
+    .Send,
+    .Name,
+    .Phone,
+    .E-mail,
+    .Message,
+    .Message2,
+    .Send2,
+    .move {
+        margin: 0; /* Adjust margins as needed */
+    }
+    
+}
+.navbar{
+    background-color: rgb(70, 71, 62) !important;
+    height: 50px;
+    transition: background-color 3s ease-in-out;
+}
+.img-right {
+    float: right;
+    border: 30px solid rgb(103, 116, 7);
+    border-radius: 10px;
+    width: 120px; /* Set the width as needed */
+    height: 100px; /* Set the height as needed */
+    object-fit: contain;
+    margin: 100px 0px 20px 10px;
+    background-color: rgb(103, 116, 7); /* Ensure the image fits within the specified dimensions */
+}
+.img-left{
+    float: left;
+    border: 30px solid rgb(103, 116, 7);
+    border-radius: 10px;
+    width: 120px; /* Set the width as needed */
+    height: 100px; /* Set the height as needed */
+    object-fit: contain;
+    margin: 100px 0px 20px 0px;
+    background-color: rgb(103, 116, 7);
+}
+.broom1{
+    border:25px solid rgb(116, 105, 7);
+    border-radius: 50%;
+    width: 150px; /* Set the width as needed */
+    height: 150px; /* Set the height as needed */
+    background-color: rgb(116, 105, 7);
+    margin: 100px 0px 20px 200px;
+    display: inline-block;
+
+}
+
+.Our-work{
+    margin: 150px 0px 25px 15px;
+}
+.fact2{
+    margin: 0px 0px 25px 15px;
+}
+
+.carousel-2{
+    position: relative;
+    border-radius: 13%;
+    width: 400px; 
+    height: 450px;
+    background-color: rgb(116, 105, 7);
+    margin: 150px 0px 25px 15px;
+    border-bottom: 30px solid rgb(116, 105, 7);
+    padding-bottom: 150px;
+
+}
+.carousel-3 {
+    position: relative;
+    border-radius: 13%;
+    width: 400px;
+    height: 450px;
+    background-color: rgb(116, 105, 7);
+    margin: 150px 0px 25px 15px;
+    border-bottom: 30px solid rgb(116, 105, 7);
+    padding-bottom: 150px;
+}
+
+
+.carousel-4{
+    position: relative;
+    border-radius: 13%;
+    width: 400px; 
+    height: 450px;
+    background-color: rgb(116, 105, 7);
+    border-bottom: 30px solid rgb(116, 105, 7);
+    padding-bottom: 150px;
+    margin: 150px 0px 25px 15px;
+}
+.carousel-5{
+    position: relative;
+    border-radius: 13%;
+    width: 400px; 
+    height: 450px;
+    background-color: rgb(116, 105, 7);
+    border-bottom: 30px solid rgb(116, 105, 7);
+    padding-bottom: 150px;
+    margin: 50px 0px 25px 15px;
+}
+.carousel-6{
+    position: relative;
+    border-radius: 13%;
+    width: 400px; 
+    height: 450px;
+    background-color: rgb(116, 105, 7);
+    border-bottom: 30px solid rgb(116, 105, 7);
+    padding-bottom: 150px;
+    margin: 50px 0px 25px 20px;
+}
+.carousel-7{
+    position: relative;
+    border-radius: 13%;
+    width: 400px; 
+    height: 450px;
+    background-color: rgb(116, 105, 7);
+    border-bottom: 30px solid rgb(116, 105, 7);
+    padding-bottom: 150px;
+    margin: 50px 0px 25px 20px;
+}
+
+.img-circle{
+    height: 60px;
+    width: 60px;
+    margin-top: -190px;
+    margin-left: 10px;
+}
+.clients{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.img12{
+    width: 430px;
+    height: 350px;
+    margin-left: 80px;
+    margin-top: 50px;
+
+}
+.img-12-idit{
+    margin-left: 130px;
+
+}
+.Send{
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Name{
+    color: black;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.Phone{
+    color: black;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.E-mail{
+    color: black;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.Message{
+    color: black;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 300px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+
+}
+.Message2{
+    opacity: 0.5;
+margin-top: -300px;
+}
+.Send2{
+    background-color: rgb(170, 160, 70);
+    border-radius: 10px;
+    border: none;
+    padding: 3px 20px;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    animation: animateNavItems 2s ease-in-out;
+}
+.move{
+    display: flex;
+    justify-content: center;
+    margin-top: 260px;
+
+}
+@keyframes animateNavItems {
+    0% {
+        transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+    /* to & from = 0%   & 100%  */
+    100% {
+        transform: rotateZ(0) rotateX(0) scale(1);
+        opacity: 1;
+    }
+}
